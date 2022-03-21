@@ -1,0 +1,17 @@
+<form style="padding: 10px;" class="container-fluid" [formGroup]="group" (ngSubmit)="submit()">
+    <div class="row g-3">
+        <div class="col">
+          <span class="input-group-addon"><i class="fa fa-envelope fa-10x"></i></span>
+          <textarea formControlName="descricao" required="required" style="height: 38px;" type="text" class="form-control" placeholder="Descrição" aria-label="Descrição"></textarea>
+        </div>
+        <div class="col">
+          <input formControlName="data" required="required" type="datetime-local" class="form-control" placeholder="Data" aria-label="Data">
+        </div>
+        <div class="col">
+          <input type="text" formControlName="numeroOcorrencia" class="form-control" placeholder="Número do boletim de ocorrência" aria-label="Número do boletim de ocorrência">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" [disabled]="!group.valid">Salvar</button>
+        </div>
+    </div>
+</form>

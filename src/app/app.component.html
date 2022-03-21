@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Estou seguro?</span>
+    </div>
+</nav>
+<app-ocorrencia-form (submitEvent)="onSubmit($event)"></app-ocorrencia-form>
+<app-mapa [inputOcorrencias]="ocorrencias" (onMarked)="marked = $event"></app-mapa>
