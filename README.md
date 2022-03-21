@@ -1,5 +1,12 @@
 # EstouSeguroFront
 
+## Description
+In this project, you can visualize occurrences of theft in your city and see safe places you can go.
+
+This application use Google Maps API. For dev mode you don't need a api key, but if you need to add it in this project, find for src/index.html and add your key in line 14:54.
+
+You cand find the api on https://github.com/eduhAgostinho/estou-seguro-back
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
