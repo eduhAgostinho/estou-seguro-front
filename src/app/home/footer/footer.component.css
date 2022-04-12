@@ -1,0 +1,10 @@
+.iconFooter {
+    border-color: transparent;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: rgb(175, 55, 55) !important;
+    position: relative;
+    width: 100%;
+}

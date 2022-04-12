@@ -1,38 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { Ocorrencia } from './model/ocorrencia';
-import { OcorrenciasService } from './services/ocorrencias.service';
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
+  constructor(private router: Router) {}
 
-  marked!: { lat: number; lng: number; };
-  ocorrencias: Ocorrencia[] = [];
 
-  constructor(private ocorrenciaService: OcorrenciasService ) {}
-
-  ngOnInit(): void {
-    this.getOcorrencias();
-  }
-
-  onSubmit(event: { descricao: string, data: string, numeroOcorrencia: string }): void {
-    if (this.marked !== null && this.marked !== undefined) {
-      this.ocorrenciaService.createOcorrencia({ 
-        ...event,
-        latitude: this.marked.lat,
-        longitude: this.marked.lng
-      }).subscribe(novaOcorrencia => {
-        this.ocorrencias.push(novaOcorrencia);
-      })
-    } else {
-      alert('Selecione um local no mapa')
-    }
-  }
-
-  getOcorrencias() {
-    this.ocorrenciaService.getOcorrencias().subscribe(response => this.ocorrencias = response);
+  getUrl() {
+    return this.router.url;
   }
 }

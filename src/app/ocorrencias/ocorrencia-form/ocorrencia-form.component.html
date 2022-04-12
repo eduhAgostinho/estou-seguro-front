@@ -1,7 +1,6 @@
-<form style="padding: 10px;" class="container-fluid" [formGroup]="group" (ngSubmit)="submit()">
+<form style="padding: 10px;" class="container-lg" [formGroup]="group" (ngSubmit)="submit()">
     <div class="row g-3">
         <div class="col">
-          <span class="input-group-addon"><i class="fa fa-envelope fa-10x"></i></span>
           <textarea formControlName="descricao" required="required" style="height: 38px;" type="text" class="form-control" placeholder="Descrição" aria-label="Descrição"></textarea>
         </div>
         <div class="col">

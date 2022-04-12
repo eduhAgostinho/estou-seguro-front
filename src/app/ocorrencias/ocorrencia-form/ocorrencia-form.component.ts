@@ -15,7 +15,7 @@ export class OcorrenciaFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.group = this.fb.group({
-      descricao: ['testando', Validators.required],
+      descricao: ['', Validators.required],
       data: [null, Validators.required],
       numeroOcorrencia: [null]
     });

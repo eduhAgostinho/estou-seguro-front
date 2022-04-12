@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { Ocorrencia } from '../model/ocorrencia';
+import { Ocorrencia } from '../../model/ocorrencia';
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import { formatarData } from 'src/utils/formatarData';
-import { POA_COORDS } from '../constants/poaCoords.constant';
-import { LETRAS } from '../constants/alfabeto.constant';
+import { POA_COORDS } from '../../constants/poaCoords.constant';
+import { LETRAS } from '../../constants/alfabeto.constant';
 
 @Component({
   selector: 'app-mapa',
