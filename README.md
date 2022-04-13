@@ -3,7 +3,7 @@
 ## Description
 In this project, you can visualize occurrences of theft in your city and see safe places you can go.
 
-This application use Google Maps API. For dev mode you don't need a api key, but if you need to add it in this project, find for src/index.html and add your key in line 14:54.
+This application use Google Maps API. For dev mode you don't need a api key, but if you need to add it in this project, find for src/index.html and add your key in line 15:54.
 
 You cand find the api on https://github.com/eduhAgostinho/estou-seguro-back
 
